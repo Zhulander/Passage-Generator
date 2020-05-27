@@ -1,5 +1,5 @@
 
-<script>
+
 
 var randomact = Math.floor(Math.random()*5+1);
 var randomscene = Math.floor(Math.random()*4+1);
@@ -111,5 +111,5 @@ if (randomact == 5) {
 
 
     console.log(randomact,randomscene,randomlinestart,randomlineend)
-    </script>
+
 
