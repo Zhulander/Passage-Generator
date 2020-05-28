@@ -8,6 +8,13 @@ var randomlineend = randomlinestart + 40;
 
 // Act 1//
 
+function generatepassage(randomact, randomscene, randomlinestart, randomlineend) {
+ 
+var randomact = Math.floor(Math.random()*5+1);
+var randomscene = Math.floor(Math.random()*4+1);
+var randomlinestart = Math.floor(Math.random()*200+1);
+var randomlineend = randomlinestart + 40;
+
 if (randomact == 1) {
    randomscene = Math.floor(Math.random()*5+1)
    if (randomscene == 1) {
@@ -107,9 +114,11 @@ if (randomact == 5) {
    randomlineend = randomlinestart + 40;
 };
 
+const passagedisplay = ' Act ' + randomact + ' Scene ' + randomscene + ' Lines ' + randomlinestart + ' to ' + randomlineend;
 
-
-
-    console.log(randomact,randomscene,randomlinestart,randomlineend)
+document.getElementById('passagedisplay').innerText = passagedisplay;
+}
+document.getElementById('generate')
+     .addEventListener('click', generatepassage)
 
 
